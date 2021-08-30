@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /*Primary*/
+    --Very-dark-blue-bg: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue-card-bg: hsl(244, 38%, 16%);
+    --Soft-violet-accent: hsl(277, 64%, 61%);
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-main-p: hsl(0, 0%, 100%, 0.75);
+
+    /*Font size*/
+    --font-size: 15px;
+
+    /*Font num 1*/
+    --inter: 'Inter', sans-serif;
+    --inter-normal: 400;
+    --inter-bold: 700;
+
+    /*Font num 2*/
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --lexend-deca-normal: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--inter);
+    font-weight: var(--inter-normal);
+    font-size: var(--font-size);
+    color: var(--Slightly-transparent-white-main-p)
+}
+
+h1,
+h2,
+h3{
+    font-family: var(--lexend-deca);
+    font-weight: var(--lexend-deca-normal);
+    color: var(--White);
+}
+
+span {
+    color: var(--Soft-violet-accent);
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: var(--Very-dark-blue-bg);
+}
+
+.box {
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: var(--Dark-desaturated-blue-card-bg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
