@@ -1,0 +1,36 @@
+@media (max-width: 1010px) {
+    .box {
+        height: 620px;
+        width: 320px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 1fr;
+    }
+
+    .right-box {
+        grid-row: 1 / 2;
+    }
+
+    .left-box-content {
+        width: 80%;
+        height: 90%;
+    }
+
+    .left-box-content h1,
+    .left-box-content p,
+    .inter-grid div h3 {
+        text-align: center;
+    }
+
+    .left-box-content p {
+        margin-bottom: 12px;
+    }
+
+    .inter-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inter-grid div {
+        margin-top: 12px;
+    }
+}
