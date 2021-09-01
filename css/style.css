@@ -78,7 +78,9 @@ span {
 }
 
 .right-box {
-    background: linear-gradient(rgba(88, 33, 122, 0.4), rgba(88, 33, 122, 0.4)), url(../images/image-header-desktop.jpg);
+    background-image: url(../images/image-header-desktop.jpg);
+    background-color: var(--Soft-violet-accent);
+    background-blend-mode: multiply;
     background-size: cover;
 }
 
